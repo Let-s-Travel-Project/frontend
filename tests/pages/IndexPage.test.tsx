@@ -1,8 +1,7 @@
 import React from "react";
 import { describe, it, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
-import "@testing-library/jest-dom/vitest";
-import IndexPage from "../../src/pages/IndexPage";
+import IndexPage from "@/pages/IndexPage";
 
 describe("Index", () => {
   it("should have 인덱스", () => {
