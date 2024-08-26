@@ -3,9 +3,9 @@ import { Outlet } from "react-router-dom";
 
 const RootLayout: FunctionComponent = () => {
   return (
-    <>
+    <div className="mx-2 my-8">
       <Outlet />
-    </>
+    </div>
   );
 };
 
