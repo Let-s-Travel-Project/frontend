@@ -3,7 +3,7 @@ import SearchBar from "./SearchBar";
 const SearchLayout = () => {
   return (
     <>
-      <div className="mt-10 mb-6">
+      <div>
         <SearchBar />
       </div>
       <Outlet />
