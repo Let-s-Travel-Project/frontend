@@ -1,9 +1,25 @@
+import SelectButton from "@/components/common/SelectButton";
 import React from "react";
 const IndexPage: React.FunctionComponent = () => {
+  const sectors = [
+    "일본/중국/대만",
+    "동남아(베트남/태국/말레이)",
+    "북미(미국/캐나다)",
+    "유럽(서유럽, 동유럽, 북유럽)",
+  ];
+
   return (
     <>
-      <hr className="bg-gray-500 max-sm:h-[1px] h-[1.5px] opacity-40 mx-2 my-4" />
-      <p>인덱스페이지</p>
+      <ul
+        id="selectWrapper"
+        className="flex max-sm:flex-col max-sm:gap-1 justify-around items-center"
+      >
+        {sectors.map((sector, index) => (
+          <li key={index}>
+            <SelectButton id={index}>{sector}</SelectButton>
+          </li>
+        ))}
+      </ul>
     </>
   );
 };
