@@ -13,7 +13,7 @@ const CardCompoonent: React.FunctionComponent<CardCompoonentProps> = ({
   content,
 }) => {
   return (
-    <Card className="relative">
+    <Card className="relative sm:w-32 sm:h-32 lg:w-48 lg:h-48">
       {/* Background Image with Opacity */}
       {imgUrl && (
         <div

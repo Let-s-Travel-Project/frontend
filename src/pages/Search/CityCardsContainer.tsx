@@ -9,7 +9,7 @@ const CityCardsContainer: React.FunctionComponent<CityCardsContainerProps> = ({
   cities,
 }) => {
   return (
-    <ul className="flex justify-around items-center overflow-hidden max-sm:flex-col mt-8">
+    <ul className="flex justify-around items-center overflow-hidden max-sm:flex-col mt-8 gap-4">
       {cities?.map((city) => (
         <li key={city.id} className="max-sm:w-screen">
           <CardCompoonent
