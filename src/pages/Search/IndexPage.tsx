@@ -1,6 +1,6 @@
 import React from "react";
-import SelectSectorArea from "./SelectSectorArea";
-import CityCardsArea from "./CityCardsArea";
+import SelectSectorContainer from "./SelectSectorContainer";
+import CityCardsContainer from "./CityCardsContainer";
 import { mockCityDatas } from "@/mocks/mockDatas";
 const IndexPage: React.FunctionComponent = () => {
   const sectors = [
@@ -12,8 +12,8 @@ const IndexPage: React.FunctionComponent = () => {
 
   return (
     <>
-      <SelectSectorArea data={sectors} />
-      <CityCardsArea cities={mockCityDatas} />
+      <SelectSectorContainer data={sectors} />
+      <CityCardsContainer cities={mockCityDatas} />
     </>
   );
 };

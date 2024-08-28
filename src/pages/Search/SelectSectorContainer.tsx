@@ -1,12 +1,12 @@
 import SelectButton from "@/components/common/SelectButton";
 
-interface SelectSectorAreaProps {
+interface SelectSectorContainerProps {
   data: string[];
 }
 
-const SelectSectorArea: React.FunctionComponent<SelectSectorAreaProps> = ({
-  data,
-}) => {
+const SelectSectorContainer: React.FunctionComponent<
+  SelectSectorContainerProps
+> = ({ data }) => {
   return (
     <ul
       id="selectWrapper"
@@ -21,4 +21,4 @@ const SelectSectorArea: React.FunctionComponent<SelectSectorAreaProps> = ({
   );
 };
 
-export default SelectSectorArea;
+export default SelectSectorContainer;

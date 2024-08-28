@@ -1,11 +1,11 @@
 import CardCompoonent from "@/components/common/CardComponent";
 import { City } from "@/types/cityAndPlace";
 
-interface CityCardsAreaProps {
+interface CityCardsContainerProps {
   cities: City[];
 }
 
-const CityCardsArea: React.FunctionComponent<CityCardsAreaProps> = ({
+const CityCardsContainer: React.FunctionComponent<CityCardsContainerProps> = ({
   cities,
 }) => {
   return (
@@ -24,4 +24,4 @@ const CityCardsArea: React.FunctionComponent<CityCardsAreaProps> = ({
   );
 };
 
-export default CityCardsArea;
+export default CityCardsContainer;
