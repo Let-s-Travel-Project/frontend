@@ -10,7 +10,7 @@ const SelectSectorArea: React.FunctionComponent<SelectSectorAreaProps> = ({
   return (
     <ul
       id="selectWrapper"
-      className="flex max-sm:flex-col max-sm:gap-1 justify-around items-center"
+      className="flex max-sm:flex-col max-sm:gap-1 justify-around items-center "
     >
       {data.map((sector, index) => (
         <li key={index}>

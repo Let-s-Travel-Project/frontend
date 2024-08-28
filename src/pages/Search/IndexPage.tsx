@@ -1,5 +1,7 @@
 import React from "react";
 import SelectSectorArea from "./SelectSectorArea";
+import CityCardsArea from "./CityCardsArea";
+import { mockCityDatas } from "@/mocks/mockDatas";
 const IndexPage: React.FunctionComponent = () => {
   const sectors = [
     "일본/중국/대만",
@@ -11,6 +13,7 @@ const IndexPage: React.FunctionComponent = () => {
   return (
     <>
       <SelectSectorArea data={sectors} />
+      <CityCardsArea cities={mockCityDatas} />
     </>
   );
 };
