@@ -13,22 +13,22 @@ const CardCompoonent: React.FunctionComponent<CardCompoonentProps> = ({
   content,
 }) => {
   return (
-    <Card className="relative sm:w-32 sm:h-32 lg:w-48 lg:h-48">
+    <Card className="relative size-38 xl:size-64 mx-auto max-sm:size-26">
       {/* Background Image with Opacity */}
+
       {imgUrl && (
         <div
           title="cardBg"
-          className="absolute inset-0 bg-cover bg-center opacity-60"
+          className="absolute inset-0 bg-cover bg-center opacity-40 rounded-md"
           style={{ backgroundImage: `url('${imgUrl}')` }}
         />
       )}
       {/* Content */}
       <div className=" z-10">
-        <CardHeader className="font-semibold">
+        <CardHeader className="font-semibold text-xs md:text-lg lg:text-xl">
           {title}
           <span>{subtitle}</span>
         </CardHeader>
-
         <CardContent>{content}</CardContent>
       </div>
     </Card>
