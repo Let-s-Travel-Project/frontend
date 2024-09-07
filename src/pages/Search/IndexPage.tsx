@@ -7,7 +7,7 @@ const IndexPage: React.FunctionComponent = () => {
     "일본/중국/대만",
     "동남아(베트남/태국/말레이)",
     "북미(미국/캐나다)",
-    "유럽(서유럽, 동유럽, 북유럽)",
+    "유럽",
   ];
 
   return (
