@@ -14,6 +14,7 @@ const IndexPage: React.FunctionComponent = () => {
     <>
       <SelectSectorContainer data={sectors} />
       <CityCardsContainer cities={mockCityDatas} />
+      <CityCardsContainer cities={mockCityDatas} />
     </>
   );
 };
