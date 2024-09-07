@@ -1,8 +1,7 @@
-import React from "react";
 import SelectSectorContainer from "./SelectSectorContainer";
 import CityCardsContainer from "./CityCardsContainer";
 import { mockCityDatas } from "@/mocks/mockDatas";
-const IndexPage: React.FunctionComponent = () => {
+const IndexPage = () => {
   const sectors = [
     "일본/중국/대만",
     "동남아(베트남/태국/말레이)",
